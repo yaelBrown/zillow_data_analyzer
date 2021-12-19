@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 3rem;
+}
+
+small {
+  margin-bottom: 10em;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 250px;
+}
+
+#bottom {
+  margin: auto;
+}
+
+.row * {
+  margin-right: 2em;
+}
+
+.image {
+  max-height: 100px;
+}
