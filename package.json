@@ -1,0 +1,27 @@
+{
+  "name": "zillow_data_analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd client && npm run start\" \"cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "serve": "echo serve is not setup yet",
+    "deploy": "echo deploy script not setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaelBrown/zillow_data_analyzer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaelBrown/zillow_data_analyzer/issues"
+  },
+  "homepage": "https://github.com/yaelBrown/zillow_data_analyzer#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
