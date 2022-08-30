@@ -14,14 +14,13 @@ router.use('/test', async (req, res) => {
 })
 
 router.use('/d/:url?', async (req, res) => {
-  const url = req.query.url.toString()
+  const url = req.query.url
   const out = "cookies"
   if (url !== undefined) {
     try {
       console.log("z")
-      let response = await axios.get({url, headers: Cookie})
-      
-      let out = utils.process(response)
+      const response = await axios.get({url, headers: Cookie})
+      const out = utils.process(response)
       res.status(200).json({data: out, url})
     } catch (err) {
       res.status(500).json({data: url, error: err})
